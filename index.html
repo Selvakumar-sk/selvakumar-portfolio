@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selvakumar S | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showLoader()">
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="content" style="display:none">
+    <div class="theme-toggle">
+      <button onclick="toggleTheme()">🌙 / ☀️</button>
+    </div>
+
+    <div class="container">
+      <header>
+        <img src="https://via.placeholder.com/120" alt="Selvakumar S" class="profile-img">
+        <h1>Selvakumar S</h1>
+        <p>Software Developer / Cybersecurity Researcher</p>
+        <p>
+          <a href="mailto:sselvakumar2407@gmail.com">sselvakumar2407@gmail.com</a> |
+          <a href="https://www.linkedin.com/in/selvakumar-s24" target="_blank">LinkedIn</a> |
+          +91 6383006771
+        </p>
+      </header>
+
+      <section class="fade-in">
+        <h2>Objective</h2>
+        <p>A self-driven Software Developer adept at crafting clear, maintainable, and secure code. Experienced in collaborative Agile environments, with a focus on delivering top-notch, user-centric software solutions. Linux enthusiast with deep system knowledge in OS principles, networking, and vulnerability discovery, and cybersecurity. Effective team player with solid written and verbal communication skills and eager to contribute to innovative project.</p>
+      </section>
+
+      <section class="fade-in">
+        <h2>Work Experience</h2>
+        <p><strong>Cognizant Technology Solutions, Coimbatore, TN</strong><br>
+        <em>Cyber Security Analyst – Security Testing</em><br>
+        <strong>Jul 2022 - Present</strong></p>
+        <ul>
+          <li>Underwent extensive training in DAST, API security, browser extension security, LLM, and Mobile Security Testing.</li>
+          <li>Identified and reported vulnerabilities of varying severity for a leading healthcare client.</li>
+          <li>Led walkthroughs of security reports with developers to ensure prompt fixes within SLA timelines.</li>
+        </ul>
+      </section>
+
+      <section class="fade-in">
+        <h2>Education</h2>
+        <p><strong>Mepco Schlenk Engineering College, Sivakasi, TN</strong><br>
+        <em>Bachelor of Engineering, Computer Science</em><br>
+        <strong>CGPA: 8.50 - May 2022</strong></p>
+      </section>
+
+      <section class="fade-in">
+        <h2>Personal Projects</h2>
+        <div class="project">
+          <img src="https://via.placeholder.com/100x100?text=RAT" alt="RAT Project">
+          <div>
+            <h3>RAT - Adaptive Testing for WAFs</h3>
+            <p>Implemented n-gram tokenization and ε-greedy policy to adaptively search and cluster attack payloads, discovering bypass techniques with high precision and efficiency.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/100x100?text=Scanner" alt="Vulnerability Scanner">
+          <div>
+            <h3><a href="https://github.com/Selvakumar2407/Vulnerability-Scanner" target="_blank">Vulnerability Scanner</a></h3>
+            <p>Python-based generic scanner that detects XSS vulnerabilities in web applications.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>C++</span><span>C</span><span>Python</span><span>Bash</span><span>SQL</span><span>Ruby</span><span>Nessus</span><span>Metasploit</span><span>Nmap</span><span>Wireshark</span><span>Linux</span><span>Packet Tracer</span><span>Snyk</span><span>MobSF</span><span>GenyMotion</span><span>Acunetix</span><span>TCP/IP</span><span>HTTP/HTTPS</span><span>DNS</span><span>OWASP</span><span>NIST</span><span>MITRE ATT&CK</span>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certified AppSec Practitioner (CAP)</li>
+          <li>Microsoft Certified: Azure Security Engineer Associate (AZ-500)</li>
+          <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+          <li>Certified Ethical Hacker (CEH) & Bug Bounty Hunting (BBH) - Prompt Infotech</li>
+          <li>Networking & Network Security - Prompt Infotech</li>
+          <li>Coursera - IBM Cybersecurity Analyst</li>
+          <li>Cybersecurity Engineer Internship - Virtually Testing Foundation</li>
+          <li>RedHat Certified System Administrator (RHCSA)</li>
+        </ul>
+      </section>
+
+      <section class="fade-in">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Discovered No-Rate-Limit bug in college website and responsibly disclosed it.</li>
+          <li>Synk CTF 2023 - Ranked #432</li>
+          <li>Top 3% on TryHackMe & HackTheBox</li>
+          <li>Reported OWASP Top 10 vulnerabilities in Hacktify’s hosted site</li>
+          <li>Qualified GATE 2022</li>
+          <li>Finalist in Sainya Ranakshetram Indian Army Hackathon (CTF)</li>
+          <li>Runner-up in Code Scrambler Competition at Mepco Schlenk Engineering College</li>
+        </ul>
+      </section>
+
+      <section class="fade-in">
+        <h2>Blog</h2>
+        <div class="blog-post">
+          <h3>Bypassing WAFs with Reinforcement Learning</h3>
+          <p>A walkthrough of how my RAT project leveraged ε-greedy policies to discover evasion payloads. <a href="blog1.html">Read more</a></p>
+        </div>
+        <div class="blog-post">
+          <h3>Deep Dive into API Security Testing</h3>
+          <p>Steps I follow during red-team engagements for comprehensive API security testing. <a href="blog2.html">Read more</a></p>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <h2>Contact</h2>
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+          <p id="form-msg"></p>
+        </form>
+      </section>
+
+      <section class="fade-in">
+        <h2>GitHub Contributions</h2>
+        <img src="https://ghchart.rshah.org/selvakumar2407" alt="GitHub chart" />
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

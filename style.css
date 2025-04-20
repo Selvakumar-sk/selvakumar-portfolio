@@ -1,0 +1,126 @@
+/* style.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --primary: #007bff;
+}
+
+.dark {
+  --bg: #1e1e1e;
+  --text: #f5f5f5;
+  --primary: #0dcaf0;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+h1, h2 {
+  color: var(--primary);
+}
+
+.project, .blog-post {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.project img, .blog-post img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.skills span {
+  display: inline-block;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.contact-form button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid var(--primary);
+  border-top: 6px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
